@@ -8,7 +8,9 @@
   "scripts": {
     "dev": "webpack-dev-server --env.development --open",
     "build": "npx webpack --env.production",
-    "lint": "./node_modules/.bin/eslint --ext .jsx,.js src"
+    "lint": "./node_modules/.bin/eslint --ext .jsx,.js src",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "husky": {
     "hooks": {
@@ -29,6 +31,7 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/react": "^4.1.4",
     "babel-loader": "^8.0.4",
     "css-loader": "^2.1.0",
     "eslint": "^5.11.1",
@@ -46,6 +49,9 @@
     "sass-loader": "^7.1.0",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-dev-server": "^3.1.14",
+    "@storybook/addon-actions": "^4.1.4",
+    "@storybook/addon-links": "^4.1.4",
+    "@storybook/addons": "^4.1.4"
   }
 }
